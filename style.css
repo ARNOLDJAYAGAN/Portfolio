@@ -26,13 +26,28 @@ header {
     margin-top: 20px;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 1.5rem 5%;
+
+    /* 🔥 Glass panel effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    /* 🔥 Border line */
+    border: 1px solid rgba(240, 230, 140, 0.3);
+
+    /* 🔥 Rounded panel */
+    border-radius: 1.5rem;
+
+    /* 🔥 Shadow glow */
+    box-shadow: 0 0 20px rgba(240, 230, 140, 0.15);
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     z-index: 100;
 }
 
